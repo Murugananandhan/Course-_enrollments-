@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Enrollment System</h1>
+
+        <h2>Add a New Course</h2>
+        <div class="form-container">
+            <input type="text" id="courseName" placeholder="Course Name">
+            <input type="text" id="courseCode" placeholder="Course Code">
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+
+  
+        <h2>Available Courses</h2>
+        <ul id="courseList"></ul>
+
+        <h2>Enroll in a Course</h2>
+        <div class="form-container">
+            <input type="text" id="studentName" placeholder="Student Name">
+            <select id="courseSelect">
+                <option value="">Select a Course</option>
+            </select>
+            <button onclick="enrollStudent()">Enroll Student</button>
+        </div>
+
+
+        <h2>Enrolled Students</h2>
+        <div id="enrolledStudents"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
